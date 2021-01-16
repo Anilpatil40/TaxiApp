@@ -3,14 +3,14 @@ package com.swayam.taxiapp;
 import android.location.Location;
 
 public class TaxiManager {
-    private Location destLocation;
+    private Location destLocation = null;
 
     public void setDestLocation(Location destLocation) {
         this.destLocation = destLocation;
     }
 
     public float getDistanceToDestLocation(Location location){
-        if (location == null && destLocation!=null){
+        if (location != null && destLocation!=null){
             return location.distanceTo(destLocation);
         }else {
             return -1f;
@@ -32,8 +32,13 @@ public class TaxiManager {
         result += (timeLeftInHours == 1) ? "1 hour" : (timeLeftInHours > 1) ? timeLeftInHours + " hours" : "";
 
         int timeLeftInMinutes = (int) ((timeLeft - timeLeftInHours) * 60);
-        result += (timeLeftInMinutes == 1) ? "1 minute" : (timeLeftInMinutes > 1) ? timeLeftInMinutes + " minutes" : "";
+        String minutesInString = ((timeLeftInMinutes == 1) ? "1 minute" : (timeLeftInMinutes > 1) ? timeLeftInMinutes + " minutes" : "");
+        result += (timeLeftInHours == 0) ? minutesInString : " " + minutesInString ;
 
         return result;
+    }
+
+    public boolean isDestLocationAvailable(){
+        return destLocation != null;
     }
 }
