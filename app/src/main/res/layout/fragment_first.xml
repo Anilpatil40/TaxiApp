@@ -10,47 +10,53 @@
     tools:context=".FirstFragment">
 
     <EditText
+        android:id="@+id/desatination_text"
         android:layout_width="match_parent"
         android:layout_height="@dimen/editText_height"
-        android:paddingStart="@dimen/editText_padding_start"
+        android:background="@color/editText_background_color"
         android:hint="@string/destination_text_hint"
-        android:background="@color/editText_background_color"/>
+        android:paddingStart="@dimen/editText_padding_start" />
 
     <EditText
+        android:id="@+id/speed_text"
         android:layout_width="match_parent"
         android:layout_height="@dimen/editText_height"
         android:layout_marginTop="@dimen/editText_margin_top"
-        android:paddingStart="@dimen/editText_padding_start"
-        android:inputType="number"
+        android:background="@color/editText_background_color"
         android:hint="@string/speed_text_hint"
-        android:background="@color/editText_background_color"/>
+        android:inputType="number"
+        android:paddingStart="@dimen/editText_padding_start" />
 
     <EditText
+        android:id="@+id/meters_per_mile"
         android:layout_width="match_parent"
         android:layout_height="@dimen/editText_height"
         android:layout_marginTop="@dimen/editText_margin_top"
-        android:paddingStart="@dimen/editText_padding_start"
+        android:background="@color/editText_background_color"
         android:hint="@string/meter_converter_text_hint"
-        android:background="@color/editText_background_color"/>
+        android:paddingStart="@dimen/editText_padding_start" />
 
     <Button
+        android:id="@+id/find_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/editText_margin_top"
-        android:text="@string/button_text"/>
+        android:text="@string/button_text" />
 
     <TextView
+        android:id="@+id/remain_time_text"
         android:layout_width="match_parent"
         android:layout_height="@dimen/editText_height"
         android:layout_marginTop="@dimen/editText_margin_top"
         android:textAlignment="center"
-        android:textSize="@dimen/text_size"/>
+        android:textSize="@dimen/text_size" />
 
     <TextView
+        android:id="@+id/remain_distance_text"
         android:layout_width="match_parent"
         android:layout_height="@dimen/editText_height"
         android:layout_marginTop="@dimen/editText_margin_top"
         android:textAlignment="center"
-        android:textSize="@dimen/text_size"/>
+        android:textSize="@dimen/text_size" />
 
 </LinearLayout>
