@@ -1,3 +1,8 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="editText_height">50dp</dimen>
+    <dimen name="mainView_padding">20dp</dimen>
+    <dimen name="editText_padding_start">20dp</dimen>
+    <dimen name="editText_margin_top">20dp</dimen>
+    <dimen name="text_size">30sp</dimen>
 </resources>

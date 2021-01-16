@@ -5,8 +5,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/mainView_padding"
+    android:orientation="vertical"
     tools:context=".FirstFragment">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:paddingStart="@dimen/editText_padding_start"
+        android:hint="@string/destination_text_hint"
+        android:background="@color/editText_background_color"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginTop="@dimen/editText_margin_top"
+        android:paddingStart="@dimen/editText_padding_start"
+        android:inputType="number"
+        android:hint="@string/speed_text_hint"
+        android:background="@color/editText_background_color"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginTop="@dimen/editText_margin_top"
+        android:paddingStart="@dimen/editText_padding_start"
+        android:hint="@string/meter_converter_text_hint"
+        android:background="@color/editText_background_color"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editText_margin_top"
+        android:text="@string/button_text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginTop="@dimen/editText_margin_top"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginTop="@dimen/editText_margin_top"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size"/>
 
 </LinearLayout>
